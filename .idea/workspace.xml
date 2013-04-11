@@ -12,6 +12,7 @@
     <file path="/_variables.scss" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365639401823" ignored="false" />
     <file path="/index.html" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365641626382" ignored="false" />
     <file path="/factories.json" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365642572287" ignored="false" />
+    <file path="/component.json" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365669685547" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Complex.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Complex.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="39" selection-start="825" selection-end="825" vertical-scroll-proportion="0.4455645">
+            <state line="26" column="39" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="component.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="component.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="340" selection-end="340" vertical-scroll-proportion="-10.461538">
+            <state line="17" column="44" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29917184">
               <folding />
             </state>
           </provider>
@@ -70,7 +71,7 @@
       <file leaf-file-name="component.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/angular-ui/component.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="146" selection-end="146" vertical-scroll-proportion="-4.576923">
+            <state line="2" column="19" selection-start="40" selection-end="45" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
@@ -105,6 +106,7 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/Complex.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/Complex.js" />
+        <option value="$PROJECT_DIR$/component.json" />
       </list>
     </option>
   </component>
@@ -548,23 +550,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="39" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/angular-ui/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="146" selection-end="146" vertical-scroll-proportion="-4.576923">
+        <state line="2" column="19" selection-start="40" selection-end="45" vertical-scroll-proportion="-1.3076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="340" selection-end="340" vertical-scroll-proportion="-10.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="39" selection-start="825" selection-end="825" vertical-scroll-proportion="0.4455645">
+        <state line="17" column="44" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29917184">
           <folding />
         </state>
       </provider>
