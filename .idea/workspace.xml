@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" name="Default" comment="" />
+    <list default="true" id="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/Complex.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/Complex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/Complex.js" afterPath="$PROJECT_DIR$/test/spec/controllers/Complex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/complex.html" afterPath="$PROJECT_DIR$/app/views/complex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Complexity.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Complex.js" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365642970637" ignored="false" />
+    <file path="/Complex.js" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365670347314" ignored="false" />
     <file path="/karma.conf.js" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365636058191" ignored="false" />
     <file path="/app.js" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365636249888" ignored="false" />
-    <file path="/complex.html" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365642697272" ignored="false" />
+    <file path="/complex.html" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365672080038" ignored="false" />
     <file path="$PROJECT_DIR$/.tmp/styles/main.css" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365640627779" ignored="false" />
     <file path="/_variables.scss" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365639401823" ignored="false" />
     <file path="/index.html" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365641626382" ignored="false" />
     <file path="/factories.json" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365642572287" ignored="false" />
     <file path="/component.json" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365669685547" ignored="false" />
+    <file path="/Dummy.txt" changelist="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" time="1365671099272" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +40,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="43" selection-start="1305" selection-end="1342" vertical-scroll-proportion="-15.153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="36" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+            <state line="2" column="36" selection-start="48" selection-end="51" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="complex.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/complex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="64" selection-start="203" selection-end="203" vertical-scroll-proportion="-1.9615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Complex.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="71" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.32218844">
               <folding />
             </state>
           </provider>
@@ -44,43 +79,7 @@
       <file leaf-file-name="Complex.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/Complex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="43" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Complex.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="39" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/component.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="44" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29917184">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/angular-ui/component.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="40" selection-end="45" vertical-scroll-proportion="-1.3076923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/karma.conf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="93" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+            <state line="9" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,6 +92,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -102,11 +109,11 @@
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/data/factories.json" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/views/complex.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/Complex.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
-        <option value="$PROJECT_DIR$/test/spec/controllers/Complex.js" />
         <option value="$PROJECT_DIR$/component.json" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/Complex.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/Complex.js" />
+        <option value="$PROJECT_DIR$/app/views/complex.html" />
       </list>
     </option>
   </component>
@@ -116,7 +123,7 @@
     <option name="width" value="1616" />
     <option name="height" value="1176" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -265,28 +272,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Complexity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Complexity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -334,7 +319,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -370,6 +355,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="45ee5af5-6bb9-4f38-8e62-cc46e9d9615a" name="Default" comment="" />
@@ -380,15 +382,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.67069155" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -471,13 +473,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/data/factories.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="670" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/angular-ui/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -499,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/complex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="66" selection-start="179" selection-end="179" vertical-scroll-proportion="0.035196688">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -522,51 +510,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="75" selection-start="1454" selection-end="1512" vertical-scroll-proportion="0.5173137">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/Complex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="43" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+        <state line="17" column="44" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29917184">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="93" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="39" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
+        <state line="41" column="93" selection-start="967" selection-end="967" vertical-scroll-proportion="0.46981892">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/angular-ui/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="40" selection-end="45" vertical-scroll-proportion="-1.3076923">
+        <state line="2" column="19" selection-start="40" selection-end="45" vertical-scroll-proportion="0.035123967">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component.json">
+    <entry file="file://$PROJECT_DIR$/app/scripts/data/factories.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="44" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29917184">
+        <state line="0" column="0" selection-start="0" selection-end="670" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="43" selection-start="1305" selection-end="1342" vertical-scroll-proportion="-15.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/Complex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="48" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/complex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="64" selection-start="203" selection-end="203" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/Complex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="71" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.32218844">
           <folding />
         </state>
       </provider>

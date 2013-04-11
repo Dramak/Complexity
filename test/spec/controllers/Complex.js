@@ -10,13 +10,13 @@ describe('Controller: ComplexCtrl', function () {
     beforeEach(inject(function ($injector, $rootScope, $controller) {
         $httpBackend = $injector.get('$httpBackend');
         $httpBackend.expectGET('scripts/data/factories.json').respond([
-            {   "id":0,
+            {   "id": 0,
                 "name": "Solar Power Plant",
                 "race": "Boron",
                 "amount": 1,
                 "product": 0,
                 "amount_produced": 5},
-            {   "id":0,
+            {   "id": 0,
                 "name": "BoGas Plant",
                 "race": "Paranid",
                 "amount": 1,
@@ -54,7 +54,7 @@ describe('Controller: ComplexCtrl', function () {
     it('Should add a factory to the complex when the addFactory function is called', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
+        myScope.AddFactoryToComplex(0);
 
         expect(myScope.complex.length).toBe(1);
         expect(myScope.complex).toContain(fact);
@@ -62,8 +62,8 @@ describe('Controller: ComplexCtrl', function () {
     it('Should increment the original factory when multiple factories are added', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
-        myScope.AddFactoryToComplex(fact);
+        myScope.AddFactoryToComplex(0);
+        myScope.AddFactoryToComplex(0);
 
         expect(myScope.complex.length).toBe(1);
         expect(myScope.complex[myScope.complex.indexOf(fact)].amount).toBe(2);
@@ -71,8 +71,8 @@ describe('Controller: ComplexCtrl', function () {
     it('Should remove a factory form the complex when the removeFactory function is called', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
-        myScope.RemoveFactoryFromComplex(fact);
+        myScope.AddFactoryToComplex(0);
+        myScope.RemoveFactoryFromComplex(0);
 
         expect(myScope.complex.length).toBe(0);
         expect(myScope.complex).not.toContain(fact);
@@ -80,9 +80,9 @@ describe('Controller: ComplexCtrl', function () {
     it('Should decrement the original factory amount when a factory is removed when multiple of the same type exist', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
-        myScope.AddFactoryToComplex(fact);
-        myScope.RemoveFactoryFromComplex(fact);
+        myScope.AddFactoryToComplex(0);
+        myScope.AddFactoryToComplex(0);
+        myScope.RemoveFactoryFromComplex(0);
 
         expect(myScope.complex.length).toBe(1);
         expect(myScope.complex[myScope.complex.indexOf(fact)].amount).toBe(1);
@@ -93,28 +93,28 @@ describe('Controller: ComplexCtrl', function () {
     it('Should return an single item when calculating the complexes product when one factory is in the complex', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
+        myScope.AddFactoryToComplex(0);
 
         expect(myScope.CaculateComplexProduct().length).toBe(1);
     });
     it('Should return an single item when calculating the complexes product when two identical factories are in the complex', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
-        myScope.AddFactoryToComplex(fact);
+        myScope.AddFactoryToComplex(0);
+        myScope.AddFactoryToComplex(0);
 
         expect(myScope.CaculateComplexProduct().length).toBe(1);
     });
     it('Should return the amount produced of a single factory when calculating the prduct of a complex', function () {
         var fact = myScope.factories[0];
 
-        myScope.AddFactoryToComplex(fact);
+        myScope.AddFactoryToComplex(0);
 
         expect(myScope.CaculateComplexProduct()[0].amount).toBe(5);
     });
     it('Should return multiple items in a complex complex', function () {
-        myScope.AddFactoryToComplex(myScope.factories[0]);
-        myScope.AddFactoryToComplex(myScope.factories[1]);
+        myScope.AddFactoryToComplex(0);
+        myScope.AddFactoryToComplex(1);
 
         expect(myScope.CaculateComplexProduct().length).toBe(2);
     });

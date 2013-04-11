@@ -1,5 +1,6 @@
 <label for="factory-select">Factory list</label>
-<select ui-select2 id="factory-select" data-ng-model="factory">
+<select data-ui-select2 id="factory-select" class="input-large" data-ng-model="factory">
+
     <option data-ng-repeat="fact in factories" value="{{fact.id}}">{{fact.name}} {{fact.race}}</option>
 </select>
 <button data-ng-click="AddFactoryToComplex(factory)" class="btn"><i class="icon-plus"></i></button>
