@@ -3,13 +3,13 @@
 describe('Controller: ComplexCtrl', function () {
 
     // load the controller's module
-    beforeEach(module('ComplexityApp',['ui']));
+    beforeEach(module('ComplexityApp'));
 
     var ctrl, myScope, $httpBackend;
 
     beforeEach(inject(function ($injector, $rootScope, $controller) {
         $httpBackend = $injector.get('$httpBackend');
-        $httpBackend.expectGET('js/data/factories.json').respond([
+        $httpBackend.expectGET('scripts/data/factories.json').respond([
             {   "id":0,
                 "name": "Solar Power Plant",
                 "race": "Boron",
@@ -24,7 +24,7 @@ describe('Controller: ComplexCtrl', function () {
                 "amount_produced": 5}
         ]);
 
-        $httpBackend.expectGET('js/data/items.json').respond([
+        $httpBackend.expectGET('scripts/data/items.json').respond([
             {   "name": "Energy Cell",
                 "id": 0},
             {   "name": "BoGas",

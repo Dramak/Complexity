@@ -7,8 +7,11 @@ basePath = '';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
+    'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+    'http://ivaynberg.github.com/select2/select2-3.2/select2.js',
   'app/components/angular/angular.js',
   'app/components/angular-mocks/angular-mocks.js',
+  'app/components/angular-ui/build/angular-ui.js',
   'app/scripts/*.js',
   'app/scripts/**/*.js',
   'test/mock/**/*.js',
@@ -56,7 +59,7 @@ autoWatch = true;
 browsers = ['Chrome'];
 
 // If browser does not capture in given timeout [ms], kill it
-captureTimeout = 5000;
+captureTimeout = 50000;
 
 // Continuous Integration mode
 // if true, it capture browsers, run tests and exit
