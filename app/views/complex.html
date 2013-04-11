@@ -19,8 +19,19 @@
         <td>{{factory.race}}</td>
         <td>{{factory.amount}}</td>
         <td>
-            <button class="btn" data-ng-click="RemoveFactoryFromComplex(factory)"><i class="icon-minus"></i></button>
+            <button class="btn" data-ng-click="RemoveFactoryFromComplex(factory.id)"><i class="icon-minus"></i></button>
         </td>
     </tr>
 </table>
-{{CaculateComplexProduct()}}
+
+<h3>Product List</h3>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Amount Per Cycle</th>
+    </tr>
+    <tr data-ng-repeat="item in GetComplexProduct()">
+        <td>{{item.item.name}}</td>
+        <td>{{item.amount}}</td>
+    </tr>
+</table>

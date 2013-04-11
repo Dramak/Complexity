@@ -23,7 +23,7 @@ exclude = [];
 
 // test results reporter to use
 // possible values: dots || progress || growl
-reporters = ['progress','coverage'];
+reporters = ['progress'];
 
 // web server port
 port = 8080;
@@ -31,11 +31,6 @@ port = 8080;
 // cli runner port
 runnerPort = 9100;
 
-coverageReporter = {
-    type : 'text',
-    dir : 'coverage/',
-    file : 'coverage.txt'
-}
 
 
 // enable / disable colors in the output (reporters and logs)

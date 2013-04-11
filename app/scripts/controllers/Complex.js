@@ -3,7 +3,11 @@
 angular.module('ComplexityApp')
     .controller('ComplexCtrl', function ($scope, $http) {
         $scope.complex = [];
+        $scope.complexProduct = [];
 
+        $scope.GetComplexProduct = function() {
+            return this.complexProduct;
+        };
         //Load the factory data
         $http.get('scripts/data/factories.json').success(function (data) {
             $scope.factories = data;
@@ -22,6 +26,7 @@ angular.module('ComplexityApp')
             } else {
                 $scope.complex[complexIndex].amount++;
             }
+            this.CalculateComplexProduct();
         };
 
         $scope.RemoveFactoryFromComplex = function ($factory) {
@@ -32,6 +37,7 @@ angular.module('ComplexityApp')
             } else {
                 $scope.complex.splice(complexIndex, 1);
             }
+            this.CalculateComplexProduct();
         };
         /**
          * @return {number}
@@ -51,12 +57,14 @@ angular.module('ComplexityApp')
                 var index = this.CheckForMatchingItem(itemsProduced, item);
 
                 if (index === -1) {
-                    itemsProduced.push({"item": item, "amount": $scope.complex[i].amount_produced});
+                    itemsProduced.push({
+                        "item": item,
+                        "amount": ($scope.complex[i].amount_produced * $scope.complex[i].amount)});
                 }else {
-                    itemsProduced[index].amount += $scope.complex[i].amount_produced;
+                    itemsProduced[index].amount += ($scope.complex[i].amount_produced * $scope.complex[i].amount)
                 }
             }
-            return itemsProduced;
+            angular.extend(this.complexProduct, itemsProduced);
         };
         /**
          * @return {number}
