@@ -16,11 +16,17 @@ describe('Controller: ComplexCtrl', function () {
                 "amount": 1,
                 "product": 0,
                 "amount_produced": 5},
-            {   "id": 0,
+            {   "id": 1,
                 "name": "BoGas Plant",
                 "race": "Paranid",
                 "amount": 1,
                 "product": 1,
+                "amount_produced": 5},
+            {   "id": 2,
+                "name": "Solar Power Plant",
+                "race": "Paranid",
+                "amount": 1,
+                "product": 0,
                 "amount_produced": 5}
         ]);
 
@@ -88,14 +94,14 @@ describe('Controller: ComplexCtrl', function () {
         expect(myScope.complex[myScope.complex.indexOf(fact)].amount).toBe(1);
     });
     it('Should return an empty array when nothing is in the complex when calculating the complexes product', function () {
-        expect(myScope.CaculateComplexProduct().length).toBe(0);
+        expect(myScope.CalculateComplexProduct().length).toBe(0);
     });
     it('Should return an single item when calculating the complexes product when one factory is in the complex', function () {
         var fact = myScope.factories[0];
 
         myScope.AddFactoryToComplex(0);
 
-        expect(myScope.CaculateComplexProduct().length).toBe(1);
+        expect(myScope.CalculateComplexProduct().length).toBe(1);
     });
     it('Should return an single item when calculating the complexes product when two identical factories are in the complex', function () {
         var fact = myScope.factories[0];
@@ -103,20 +109,29 @@ describe('Controller: ComplexCtrl', function () {
         myScope.AddFactoryToComplex(0);
         myScope.AddFactoryToComplex(0);
 
-        expect(myScope.CaculateComplexProduct().length).toBe(1);
+        expect(myScope.CalculateComplexProduct().length).toBe(1);
     });
     it('Should return the amount produced of a single factory when calculating the prduct of a complex', function () {
         var fact = myScope.factories[0];
 
         myScope.AddFactoryToComplex(0);
 
-        expect(myScope.CaculateComplexProduct()[0].amount).toBe(5);
+        expect(myScope.CalculateComplexProduct()[0].amount).toBe(5);
+    });
+    it('Should return a single item in when complex contains different factories with the same product', function () {
+        myScope.AddFactoryToComplex(0);
+        myScope.AddFactoryToComplex(2);
+
+        var result = myScope.CalculateComplexProduct();
+
+        expect(result.length).toBe(1);
+        expect(result[0].amount).toBe(10);
     });
     it('Should return multiple items in a complex complex', function () {
         myScope.AddFactoryToComplex(0);
         myScope.AddFactoryToComplex(1);
 
-        expect(myScope.CaculateComplexProduct().length).toBe(2);
+        expect(myScope.CalculateComplexProduct().length).toBe(2);
     });
     it('Should return an single item when searching for a existing item', function () {
         var item = myScope.FindItemById(0);
@@ -134,6 +149,16 @@ describe('Controller: ComplexCtrl', function () {
 
         expect(item).toBeDefined();
         expect(item.name).toBe("Solar Power Plant");
+    });
+    it('Should return an single item when searching for a existing item in an array', function () {
+        var item = {"id": 0};
+        var array = [];
+        array.push({"item":item});
+
+         var result = myScope.CheckForMatchingItem(array,item);
+
+        expect(result).toBeDefined();
+        expect(result).toBe(0);
     });
     it('Should return -1 when the item does not exist', function () {
         var item = myScope.FindFactoryById(9999);

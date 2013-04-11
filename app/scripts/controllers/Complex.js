@@ -33,16 +33,34 @@ angular.module('ComplexityApp')
                 $scope.complex.splice(complexIndex, 1);
             }
         };
-
-        $scope.CaculateComplexProduct = function () {
+        /**
+         * @return {number}
+         */
+        $scope.CheckForMatchingItem = function ($array, $item) {
+            for (var i = 0; i < $array.length; i++) {
+                if ($array[i].item === $item) {
+                    return i;
+                }
+            }
+            return -1;
+        };
+        $scope.CalculateComplexProduct = function () {
             var itemsProduced = [];
-
             for (var i = 0; i < $scope.complex.length; i++) {
-                var item = { 'item': $scope.FindItemById[$scope.complex[i].product], 'amount': $scope.complex[i].amount_produced};
-                itemsProduced.push(item);
+                var item = this.FindItemById($scope.complex[i].product);
+                var index = this.CheckForMatchingItem(itemsProduced, item);
+
+                if (index === -1) {
+                    itemsProduced.push({"item": item, "amount": $scope.complex[i].amount_produced});
+                }else {
+                    itemsProduced[index].amount += $scope.complex[i].amount_produced;
+                }
             }
             return itemsProduced;
         };
+        /**
+         * @return {number}
+         */
         $scope.FindFactoryById = function (id) {
             for (var m = 0; m < $scope.factories.length; m++) {
                 if ($scope.factories[m].id == id)
@@ -51,10 +69,14 @@ angular.module('ComplexityApp')
             }
             return -1;
         };
+        /**
+         * @return {number}
+         */
         $scope.FindItemById = function (id) {
             for (var m = 0; m < $scope.items.length; m++) {
-                if ($scope.items[m].id == id)
+                if ($scope.items[m].id == id) {
                     return $scope.items[m];
+                }
             }
             return -1;
         };
