@@ -2,5 +2,5 @@ node_modules
 dist
 .tmp
 .sass-cache
-.idea/workspace.xml
+.idea
 app/components
