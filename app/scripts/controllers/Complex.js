@@ -5,7 +5,7 @@ angular.module('ComplexityApp')
         $scope.complex = [];
         $scope.complexProduct = [];
 
-        $scope.GetComplexProduct = function() {
+        $scope.GetComplexProduct = function () {
             return this.complexProduct;
         };
         //Load the factory data
@@ -60,7 +60,7 @@ angular.module('ComplexityApp')
                     itemsProduced.push({
                         "item": item,
                         "amount": ($scope.complex[i].amount_produced * $scope.complex[i].amount)});
-                }else {
+                } else {
                     itemsProduced[index].amount += ($scope.complex[i].amount_produced * $scope.complex[i].amount)
                 }
             }
