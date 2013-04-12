@@ -26,7 +26,7 @@ angular.module('ComplexityApp')
             } else {
                 $scope.complex[complexIndex].amount++;
             }
-            this.CalculateComplexProduct();
+            $scope.CalculateComplexProduct();
         };
 
         $scope.RemoveFactoryFromComplex = function ($factory) {
@@ -37,7 +37,7 @@ angular.module('ComplexityApp')
             } else {
                 $scope.complex.splice(complexIndex, 1);
             }
-            this.CalculateComplexProduct();
+            $scope.CalculateComplexProduct();
         };
         /**
          * @return {number}
@@ -64,7 +64,7 @@ angular.module('ComplexityApp')
                     itemsProduced[index].amount += ($scope.complex[i].amount_produced * $scope.complex[i].amount)
                 }
             }
-            angular.extend(this.complexProduct, itemsProduced);
+            $scope.complexProduct = itemsProduced;
         };
         /**
          * @return {number}
