@@ -193,4 +193,11 @@ describe('Controller: ComplexCtrl', function () {
 
         expect(css).toBe("error");
     });
+    it("Should clear the complex list when the ClearComplexList() is called ",function() {
+       myScope.AddFactoryToComplex(0);
+       myScope.ClearComplexList();
+
+        expect(myScope.complex.length).toBe(0);
+        expect(myScope.complexProduct.length).toBe(0);
+    });
 });

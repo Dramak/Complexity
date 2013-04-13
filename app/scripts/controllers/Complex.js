@@ -28,6 +28,9 @@ angular.module('ComplexityApp')
             }
             $scope.CalculateComplexProduct();
         };
+        /**
+         * @return {string}
+         */
         $scope.ProductClass = function(item) {
             if(item > 0) {
             return "success";
@@ -37,6 +40,10 @@ angular.module('ComplexityApp')
                 return "";
             }
         };
+        $scope.ClearComplexList = function() {
+            $scope.complex = [];
+            $scope.CalculateComplexProduct();
+        }
         $scope.RemoveFactoryFromComplex = function ($factory) {
             $factory = $scope.FindFactoryById($factory);
             var complexIndex = $scope.complex.indexOf($factory);

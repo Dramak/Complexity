@@ -6,14 +6,17 @@
 <button data-ng-click="AddFactoryToComplex(factory)" class="btn"><i class="icon-plus"></i></button>
 
 
-<h3>Complex List</h3>
-<table class="table">
+<h3>Complex List <button data-ng-click="ClearComplexList()" class="btn"><i class="icon-trash"></i></button></h3>
+<table class="table table-hover ">
+    <thead>
     <tr>
         <th>Name</th>
         <th>Race</th>
         <th>Amount</th>
         <th>Remove</th>
     </tr>
+    </thead>
+    <tbody>
     <tr data-ng-repeat="factory in complex">
         <td>{{factory.name}}</td>
         <td>{{factory.race}}</td>
@@ -22,6 +25,7 @@
             <button class="btn" data-ng-click="RemoveFactoryFromComplex(factory.id)"><i class="icon-minus"></i></button>
         </td>
     </tr>
+    </tbody>
 </table>
 
 <h3>Product List</h3>
