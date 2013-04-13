@@ -1,4 +1,8 @@
 [
-    {"name": "Energy Cell",
-        "id" : 0}
+    {   "name": "Energy Cell",
+        "id": 0},
+    {   "name": "BoGas",
+        "id": 1},
+    {   "name": "Crystal",
+        "id": 2}
 ]

@@ -6,7 +6,7 @@ angular.module('ComplexityApp')
         $scope.complexProduct = [];
 
         $scope.GetComplexProduct = function () {
-            return this.complexProduct;
+            return $scope.complexProduct;
         };
         //Load the factory data
         $http.get('scripts/data/factories.json').success(function (data) {
@@ -28,7 +28,15 @@ angular.module('ComplexityApp')
             }
             $scope.CalculateComplexProduct();
         };
-
+        $scope.ProductClass = function(item) {
+            if(item > 0) {
+            return "success";
+            }else if (item < 0) {
+                return "error";
+            }else {
+                return "";
+            }
+        };
         $scope.RemoveFactoryFromComplex = function ($factory) {
             $factory = $scope.FindFactoryById($factory);
             var complexIndex = $scope.complex.indexOf($factory);
@@ -53,15 +61,19 @@ angular.module('ComplexityApp')
         $scope.CalculateComplexProduct = function () {
             var itemsProduced = [];
             for (var i = 0; i < $scope.complex.length; i++) {
-                var item = this.FindItemById($scope.complex[i].product);
-                var index = this.CheckForMatchingItem(itemsProduced, item);
+                for(var x = 0; x < $scope.complex[i].product.length;x++) {
+                    var factory = $scope.complex[i];
+                    var product = factory.product[x];
+                var item = $scope.FindItemById(product.id);
+                var index = $scope.CheckForMatchingItem(itemsProduced, item);
 
                 if (index === -1) {
                     itemsProduced.push({
                         "item": item,
-                        "amount": ($scope.complex[i].amount_produced * $scope.complex[i].amount)});
+                        "amount": (product.amount_produced * factory.amount)});
                 } else {
-                    itemsProduced[index].amount += ($scope.complex[i].amount_produced * $scope.complex[i].amount)
+                    itemsProduced[index].amount += (product.amount_produced * factory.amount)
+                }
                 }
             }
             $scope.complexProduct = itemsProduced;

@@ -14,27 +14,36 @@ describe('Controller: ComplexCtrl', function () {
                 "name": "Solar Power Plant",
                 "race": "Boron",
                 "amount": 1,
-                "product": 0,
-                "amount_produced": 5},
+                "product": [{
+                    "id":0,
+                    "amount_produced": 5},{
+                    "id":2,
+                    "amount_produced": -5}]},
             {   "id": 1,
                 "name": "BoGas Plant",
                 "race": "Paranid",
                 "amount": 1,
-                "product": 1,
-                "amount_produced": 5},
+                "product": [{
+                    "id":2,
+                    "amount_produced": 5}]},
             {   "id": 2,
                 "name": "Solar Power Plant",
                 "race": "Paranid",
                 "amount": 1,
-                "product": 0,
-                "amount_produced": 5}
+                "product": [{
+                    "id":0,
+                    "amount_produced": 5},{
+                    "id":2,
+                    "amount_produced": -5}]}
         ]);
 
         $httpBackend.expectGET('scripts/data/items.json').respond([
             {   "name": "Energy Cell",
                 "id": 0},
             {   "name": "BoGas",
-                "id": 1}
+                "id": 1},
+            {   "name": "Crystal",
+                "id": 2}
         ]);
 
         myScope = $rootScope.$new();
@@ -100,17 +109,19 @@ describe('Controller: ComplexCtrl', function () {
     it('Should return an empty array when nothing is in the complex when calculating the complexes product', function () {
         expect(myScope.complexProduct.length).toBe(0);
     });
-    it('Should return an single item when calculating the complexes product when one factory is in the complex', function () {
+    it('Should return an item list when calculating the complexes product when one factory is in the complex', function () {
         myScope.AddFactoryToComplex(0);
 
-        expect(myScope.complexProduct.length).toBe(1);
+        expect(myScope.complexProduct).toBeDefined();
+        expect(myScope.complexProduct[0].amount).toBeDefined();
+        expect(myScope.complexProduct[0].item).toBeDefined();
     });
     it('Should return an single item when calculating the complexes product when two identical factories are in the complex', function () {
 
         myScope.AddFactoryToComplex(0);
         myScope.AddFactoryToComplex(0);
 
-        expect(myScope.complexProduct.length).toBe(1);
+        expect(myScope.complexProduct.length).toBe(2);
     });
     it('Should return the amount produced of a single factory when calculating the prduct of a complex', function () {
 
@@ -122,14 +133,14 @@ describe('Controller: ComplexCtrl', function () {
         myScope.AddFactoryToComplex(0);
         myScope.AddFactoryToComplex(2);
 
-        expect(myScope.complexProduct.length).toBe(1);
+        expect(myScope.complexProduct.length).toBe(2);
         expect(myScope.complexProduct[0].amount).toBe(10);
     });
     it('Should return a single item in when complex contains different factories with the same product', function () {
         myScope.AddFactoryToComplex(0);
         myScope.AddFactoryToComplex(0);
 
-        expect(myScope.complexProduct.length).toBe(1);
+        expect(myScope.complexProduct.length).toBe(2);
         expect(myScope.complexProduct[0].amount).toBe(10);
     });
     it('Should return multiple items in a complex complex', function () {
@@ -172,5 +183,14 @@ describe('Controller: ComplexCtrl', function () {
         expect(result).toBeDefined();
         expect(result).toBe(0);
     });
+    it('Should return success when amount > 0', function () {
+        var css = myScope.ProductClass(5);
 
+        expect(css).toBe("success");
+    });
+    it('Should return success when amount < 0', function () {
+        var css = myScope.ProductClass(-5);
+
+        expect(css).toBe("error");
+    });
 });

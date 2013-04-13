@@ -30,7 +30,7 @@
         <th>Name</th>
         <th>Amount Per Cycle</th>
     </tr>
-    <tr data-ng-repeat="item in GetComplexProduct()">
+    <tr data-ng-repeat="item in GetComplexProduct()" data-ng-class="ProductClass(item.amount)">
         <td>{{item.item.name}}</td>
         <td>{{item.amount}}</td>
     </tr>
