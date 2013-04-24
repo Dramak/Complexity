@@ -43,7 +43,7 @@ angular.module('ComplexityApp')
         $scope.ClearComplexList = function() {
             $scope.complex = [];
             $scope.CalculateComplexProduct();
-        }
+        } ;
         $scope.RemoveFactoryFromComplex = function ($factory) {
             $factory = $scope.FindFactoryById($factory);
             var complexIndex = $scope.complex.indexOf($factory);
